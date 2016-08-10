@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Demo Maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name= "Plus">+</string>
+    <string name= "Minus">-</string>
+    <string name= "PlayerName"> AJ </string>
+    <string name= "SearchButton"> Search </string>
+    <string name= "MapTypeButton"> MapType </string>
+    <string name="hint"> Search for a location...</string>
+    <string name= "ScanButton">Scan</string>
+
+</resources>

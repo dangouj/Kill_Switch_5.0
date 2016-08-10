@@ -1,0 +1,77 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="@string/hint"
+        android:id="@+id/TFaddress"
+        android:nestedScrollingEnabled="true" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/SearchButton"
+        android:id="@+id/Bsearch"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Btype"
+        android:onClick="onSearch"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/MapTypeButton"
+            android:id="@+id/Btype"
+        android:layout_alignBottom="@+id/TFaddress"
+        android:layout_alignParentEnd="true"
+        android:onClick="changeType"/>
+
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="518dp">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentStart="true"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="53dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/linearLayout">
+
+</LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ScanButton"
+        android:id="@+id/ScanButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:gravity="center"
+        android:background="@drawable/scan_button"/>
+
+</RelativeLayout>
+</LinearLayout>
